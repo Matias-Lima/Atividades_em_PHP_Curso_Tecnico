@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Login</title>
+	<meta http-equiv="refresh" content="25">
+	<script src="acesso.js">
+	</script>
+<style>
+    body{
+	background-color:#363636;
+	font-size:16px;
+	color:rgb(240, 218, 190);
+	}
+	h1{
+	text-align:center;
+	padding:20px;
+	}	
+</style>
+ </head>
+   <body>
+     <fieldset>
+ <h1>LOGIN<h1>
+ <br><br>
+ <legend>Acesso apenas com a senha</legend>
+ <br>
+          <form name="form" method="POST" action="http://localhost/A/Atividade5/q1.php">
+		             Nome: <input type="text" name="nome" autocomplete="off"><br>   
+		            Senha: <input type="password" name="senha" autocomplete="off"><br><br>   
+						   <input type="button" value="LOGIN" name="botao" onclick="acesso(this.form)">
+						   <input type="reset" value="LIMPAR" name="Limpar">	 
+           </form>
+    </fieldset>
+  </body>
+</html>

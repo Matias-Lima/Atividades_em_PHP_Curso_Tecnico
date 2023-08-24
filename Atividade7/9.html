@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<!-- 
+Uma tabela é formada por linhas e colunas. As tabelas em html são criadas a partir das tags <table></table>. 
+		Para adicionar uma linha na tabela usamos a tag <tr></tr>
+		Para adicionar uma coluna na tabela usamos a tag <td></td>
+As tabelas podem ter várias características, abaixo será mostrado alguns exemplos com suas respectivas explicações. 
+ -->
+
+		 <table border="4px"><!-- As tabelas podem ter várias caracteristica, nesse exemplo foi colocado bordas nos elementos da tabela.
+		 Entre outras característica que podemos adicionar a tabela vale ressaltar:
+		 bgcolor: dá cor de fundo à tabela. 
+		 width: largura.
+		 height: altura.
+		 align: permite alinhar a tabela.
+		 font color: cor da fonte que ira dentro da linha ou coluna caso seja um texto.
+		 e vários outros.
+		 -->
+		    <tr>
+		    <th colspan="3" >Covid</th>
+			<!-- Percebe-se que th é diferente de td, essa diferença proporciona um maior destaque a coluna, ou seja, th chama mais a atenção quando comparado a td.
+			Além disso, temos o colspan que permite expandir a coluna fazendo com que ela ocupe mais de uma coluna ou linha no caso do rowspan   -->
+				<td>Brasil</td> 
+					<td>China</td>
+				<td>Argentina</td>
+		  </tr>
+		  <tr>
+				<td>1</td>
+					<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					<td>5</td>
+				<td>6</td>
+		  </tr>
+		  <!-- Nesse exemplo de tabela podemos observa como a coluna "Covid" da 1 linha está ocupando 3 colunas na 2 linha.
+          caso tivessemos colocado rowspan="2" ao invés de colspan="3"  a coluna estaria ocupando 2 linhas.		  -->
+		</table>
+		  
+		   <!-- tabela com algumas características das citadas acima-->
+		   
+		  <table border="10" bgcolor= "blue" align="center" height="200" width="200">
+						 <tr>
+							<td>LP</td>
+							<td>X</td>
+						 </tr>
+						 <tr>
+							<td>MT</td>
+							<td>10</td>
+						 </tr>
+						 <tr>
+							<td>Q</td>
+							<td>10</td>
+						 </tr>
+				</table>
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<!-- O formulário é uma das formas de o usuário interagir com o desenvolvedor. Ele permite que seja possível o recolhimento de algumas informações do usuário.
+Em HTML a tag que cria o formulário é <form></form>.
+O formulário em HTML tem muitos atributos e elementos entre os mais importantes podemos citar:
+		Atributos 
+action: que indica onde os dados recolhidos deverão ser enviados.
+method: especifica o método que será usado para enviar as informações, pode ser GET(mais rápido, embora seja menos seguro, uma vez que as informações são visíveis na url) e o POST(mais lento, mas é mais seguro).
+        Elementos 
+Imput: vai ser o campo de entrada das informações. Ele pode assumir vários valores, como:
+                          text: campo de texto, permite ao usuário digitar o valor.
+						  radio: permite ao usuário apenas uma opção. aparece em formato de bola.
+						  checkbox:  permite ao usuário várias opções. aparece em formato de quadrado.
+						  button: define um botão
+						  password: define um campo próprio para senhas.
+						  submit: gera um botão e quando apertado causa a submissão dos dados ao endereço que foi atribuído no action.
+label: 	representa um legenda(usuário é capaz de ver) para um item, ajudar agrupar os elementos.
+select: permite colocar opções para o usuário.
+option: são as opções.	
+			value: adicionam um valor a opção
+			id: identifica o elemento
+				<select id="alunos" name="alunos">
+						  <option value="M">Maria</option>
+						  <option value="S">Sabrina</option>
+						  <option value="C">Clara</option>
+						  <option value="C">Carol</option>
+				</select>
+fieldset: é utilizado para agrupar elementos.
+legend: vai denominar o elemento fieldset. 
+datalist: especifica elementos pre-definidos.
+
+
+abaixa estão alguns exemplos do atributos e elementos comentados.
+
+-->
+		<form>
+			<fieldset><legend>Acerte o placar dos &uacute;ltimos jogos do Sport</legend>
+							<p>Sport vs Internacional <label><!-- representa um legenda(usuário é capaz de ver) para um item, ajudar agrupar os elementos.
+							Nesse caso, eu utilizei para escreve a informação do placar do jogo, para que o usuário pudesse ver como uma das alternativas. -->
+							<input type="radio" name="p1" value="certa">3 x 5</label><label><input type="radio" name="p1">1 x 3</label><label><input type="radio" name="p1">4 x 0</label></p>
+							<p>Sport vs Botafogo <input type="text" name="p2"></p>
+					        <br>
+					<input type="submit"><!-- gera um botão e quando apertado causa a submissão dos dados ao endereço que foi atribuído no action. -->
+					
+			</fieldset><!--  é utilizado para agrupar elementos.   -->
+			
+		</form>
+			
+			
+		<form method="" action="" ><!-- action--  indica onde os dados recolhidos deverão ser enviados  --> 	
+		<!--  method --especifica o método que será usado para enviar as informações, pode ser GET(mais rápido, embora seja menos seguro, uma vez que as informações são visíveis na url) e o POST(mais lento, mas é mais seguro).---> 
+		                
+			
+			<fieldset>
+			<legend>Quem &eacute; o tecnico do Sport</legend>
+				<input list="tecnicos" name= "tecnico" >
+				
+           <datalist id="tecnicos"><!-- especificar elementos pre-definidos, nesse caso os elementos pré-definidos são Fábio, Francisco, Samarone e Jair Ventura -->
+						<option value="Fábio">
+							<option value="Francisco"><!-- são as opções.   -->
+							<option value="Samarone">
+						<option value="Jair ventura">
+						
+		   </datalist>
+					 <input type="submit">		   
+			</fieldset>
+		</form>
+</body>
+</html>
